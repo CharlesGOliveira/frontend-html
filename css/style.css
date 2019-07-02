@@ -1,5 +1,10 @@
 .body{
     margin: 0;
+    align-content: center;
+}
+@font-face{
+    font-family: 'Open Sans';
+    src: url('fonts/opensans-regular-webfont.ttf')
 }
 .barra-principal-topo{
     width: 100%;
@@ -7,7 +12,6 @@
     background-color: #F1F1F1;
 }
 .barra-principal-elementos{
-    
     margin-right: 0;
     margin-top: 0;
 }
@@ -18,21 +22,24 @@
 .telefone {
     width: 96px;
     font-size: 12px;
+    font-family: 'Open Sans Regular', sans-serif;
     color: #000000;
     padding-top: 7.5px;
     padding-bottom: 10px;
+}
+.telefone-img{
+    position: relative;
+    top: 4px
 }
 .whats {
     width: 96px;
     height: 30px;
     font-size: 12px;
+    font-family: 'Open Sans Regular', sans-serif;
     color: #000000;
     padding-bottom: 10px;
     padding-top: 10px;
     margin-left: 7%;
-}
-.whats-numero{
-    margin-left: 10px
 }
 .menu-topo{
     width: 35%;
@@ -46,7 +53,7 @@
     color: #000000;
     padding-bottom: 10px;
     padding-top: 8px;
-    
+    font-family: 'Open Sans Regular', sans-serif;
 }
 .fale_conosco{
     width: 96px;
@@ -54,7 +61,8 @@
     color: #000000;
     padding-bottom: 10px;
     padding-top: 8px;
-    margin-left: 60px
+    margin-left: 60px;
+    font-family: 'Open Sans Regular', sans-serif;
 }
 .troca_devolucao{
     width: 96px;
@@ -62,7 +70,8 @@
     color: #000000;
     padding-bottom: 10px;
     padding-top: 8px;
-    margin-left: 60px
+    margin-left: 60px;
+    font-family: 'Open Sans Regular', sans-serif;
 }
 .menu-principal{
     width: 100%;
@@ -72,8 +81,7 @@
 .menu-principal-elementos{
     padding-top: 30px;
     padding-bottom: 30px;
-    margin-right: 0;
-    margin-top: 0;
+    display: flex
 }
 .logo-site{
     width: 10%;
@@ -85,24 +93,94 @@
 .busca{
     width: 50%;
     margin-left: 350px;
-    color: gray;
-    border: 1px solid;
     width: 669.58px;
     height: 50px;
-    padding-left:20px;
-    padding-top:5px;
     position: absolute
 }
 .campo-busca{
     width: 50%;
-    margin-left: 350px;
     width: 669.58px;
     height: 50px;
-    padding-left:20px;
-    padding-top:5px;
-    background: transparent
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    border: 2px #DFDFDF solid;
+    border-radius: 7px
+}
+input::placeholder{
+    font-size: 14px;
+    color: #000000;
+    font-family: 'Open Sans Regular', sans-serif;
 }
 .btn-busca{
+    position: absolute;
+    top: 24px;
+    bottom: 10px;
+    left: 96%;
+    width: 12px;
     height: 12px;
-    background-image: url(img/search.svg);
+}
+.entrar{
+    position: absolute;
+    top: 82px;
+    bottom: 10px;
+    left: 79%;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+}
+.entrar-elementos{
+    display: none;
+    position: absolute;
+    left: -60px;
+    top: 23px;
+    text-align: center;
+    font-size: 15px;
+    background-color: #FFFFFF;
+    width: 130px;
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+    padding: 12px 5px;
+    z-index: 1;
+    border-radius: 7px;
+    font-family: 'Open Sans', sans-serif;
+}
+.entrar:hover .entrar-elementos{
+    display: block
+}
+.minha-conta{
+    font-weight: bold
+}
+.logo-entrar{
+    position: absolute;
+    left: 49px;
+    top: 9px;
+}
+.carrinho{
+    position: absolute;
+    right: 142px;
+    top: 77px;
+}
+.sacola{
+    height: 27px;
+    width: 30px;
+    position: absolute;
+    top: -1px;
+    right: 7px;
+}
+.itens-quantidade{
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    top: 9px;
+    right: -3px;
+    text-align: center;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 11px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.quantidade{
+    position: absolute;
+    top: 6px;
+    left: 3px;
 }
